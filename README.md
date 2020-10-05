@@ -1,7 +1,7 @@
 # python_calc
-# Python GUI using PyQt
+Python GUI using PyQt
 
-# Install
+Install
 
 PIP install PyQt5
 
@@ -23,6 +23,9 @@ window.move(600, 15)
 helloMsg = QLabel('This is Test', parent=window)
 helloMsg.move(60, 30)
 window.show()
+
+Retain GUI Window
+sys.exit(app.exec_())
 
 Retain GUI Window
 sys.exit(app.exec_())
