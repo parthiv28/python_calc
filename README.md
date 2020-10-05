@@ -1,19 +1,21 @@
 # python_calc
-#Python GUI using PyQt
+# Python GUI using PyQt
 
-Install
+# Install
 
 PIP install PyQt5
 
-Test installation of PyQt5
-import module
-import sys
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtWidgets import QLabel
-from PyQt5.QtWidgets import QWidget
+# Test installation of PyQt5\
+
+import module\
+import sys\
+from PyQt5.QtWidgets import QApplication\
+from PyQt5.QtWidgets import QLabel\
+from PyQt5.QtWidgets import QWidget\
 
 Create GUI
-app = QApplication(sys.argv)
+
+app = QApplication(sys.argv)<br>
 window = QWidget()
 window.setWindowTitle('PyQt5 App')
 window.setGeometry(100, 100, 280, 80)
