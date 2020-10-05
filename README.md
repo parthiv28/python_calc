@@ -58,7 +58,9 @@ createButtons()
 setDisplayText()
 getDisplayText()
 clearDisplay()
-Model of application
+
+
+# Model of application
 1. Create model.py
 2. Create function for calculator's operation
 ERROR_MSG = 'ERROR'
@@ -68,3 +70,45 @@ result = str(eval(expression, {}, {}))
 except Exception:
 result = ERROR_MSG
 return result
+
+# Controller of application
+1. Create controller.py
+
+2. Import following module
+from functools import partial
+
+3. Create Controller class
+class Controller:
+
+Add constructor
+def init(self, model, view):
+self._evaluate = model
+self._view = view
+self._connectSignals()
+
+Define Methods
+(Which will create method for CalculateResult Build expression Connect signals and slots.)
+calculateResult()
+buildExpression()
+connectSignals()
+
+# Main Class
+
+1. Create main.py
+2. Import following module
+import sys
+from PyQt5.QtWidgets import QApplication
+from view import GUI
+from model import evaluateExpression
+from controller import Controller
+
+3. Create Main Function
+def main():
+pycalc = QApplication(sys.argv)
+view = GUI()
+view.show()
+model = evaluateExpression
+Controller(model=model, view=view)
+sys.exit(pycalc.exec_())
+if name == "main":
+main()
