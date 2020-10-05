@@ -24,8 +24,7 @@ helloMsg = QLabel('This is Test', parent=window)
 helloMsg.move(60, 30)
 window.show()
 
-Retain GUI Window
+Retain GUI Window<br>
 sys.exit(app.exec_())
 
-Retain GUI Window
-sys.exit(app.exec_())
+
